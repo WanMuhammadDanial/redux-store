@@ -33,7 +33,7 @@ export class Store {
   }
 
   private notify() {
-    /**loop through subscribers list and pass the state */
+    /**loop through subscribers list and pass the state (value) */
     this.subscribers.forEach((fn) => fn(this.value));
   }
 
